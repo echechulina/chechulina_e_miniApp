@@ -1,0 +1,50 @@
+body {
+    font-family: $main-font;
+    font-size: $main-font-size;
+    color: $main-color;
+    background-color: $main-bg-color;  
+}
+
+p {
+    text-align: center;
+    font-weight: normal;
+    width: 60%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.contant {
+    display: flex;
+    justify-content: center;
+}
+
+.click {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bio-data {
+    display: none;}
+.show-bio {
+    // display: block !important;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

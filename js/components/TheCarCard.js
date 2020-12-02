@@ -13,8 +13,14 @@ export default {
 
     template: 
     `<li @click="logClicked">
+    
     <img :src="'images/' + car.image" :alt='car.name + " image"'>
-    <p>Car Name: {{ car.name }}</p></li>`,
+    <p>{{ car.name }}</p>
+    <div class="buttons">
+    <p class="click">Click for open</p>   
+    <p class="click">Click for hide</p>
+    </div>              
+   </li>`,
 
 
     created: function () {

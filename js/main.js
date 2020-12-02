@@ -1,8 +1,11 @@
 import { fetchData } from "./components/TheDataMiner.js";
 import CarCard from "./components/TheCarCard.js";
 
+
 (() => {
 
+
+    
     let vue_vm = new Vue({
         // link Vue to an element in our HTML
         //el: "#app",
@@ -35,7 +38,7 @@ import CarCard from "./components/TheCarCard.js";
            
             showCarData(car) {
 
-                // debugger;
+            
                 // remove this prof from the professors array
                 console.log('clicked to view prof bio data', car.name);
                 // the "this" keyword inside a vue instance REFERS to the Vue instance itself by default
@@ -52,4 +55,5 @@ import CarCard from "./components/TheCarCard.js";
             "car-card": CarCard
         }
     }).$mount("#app"); // also connects Vue to your wrapper in HTML
+
 })();

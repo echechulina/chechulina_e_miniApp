@@ -5,29 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MINI Cooper</title>
 
-    <link rel="stylesheet" href=css/main.css>
+    <link rel="stylesheet" href=css/master.css>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
-<header class="logo">MINI</header>
+
+<header class="mainHeader">
+<div class="logo">MINI</div>
+<nav class="mainNav">
+    <ul>
+        <li><a href="index.html">MODELS</a></li>
+        <li><a href="#">TOOLS</a></li>
+        <li><a href="#">DISCOVER</a></li>
+    </ul>
+</nav>
+</header>
+<hr class="white">
+<div class="container"></div>
+
     <main id="app">
+        <!-- show the car data in profs array -->
+
        
 
-        <!-- show the prof data in profs array -->
-        <ul>
+        <ul class="carInfo">
             <!-- this is a custom Vue component defined in main.js -->
             <car-card @showmydata="showCarData" v-for="car in models" :car="car" :key="car.id"></car-card>
 
         </ul>
 
         <!-- show more section -->
+       
         <section class="bio-data" :class="{'show-bio' : showBioData}">
-            <h1>{{ currentCarData.name }}</h1>
             <img :src="'images/' + currentCarData.image" alt="">
+            <h1>{{ currentCarData.name }}</h1>
             <p> {{ currentCarData.info}}</p>
         </section>
+        <!-- <section class="lightbox">
+            <span class="close-lb">x</span>
+            <div class="lightPart">
+                <div class="lbText"> -->
+
+               
+<!-- 
+                </div>
+            </div>
+        </section> -->
     </main>
+</div>
 </body>
 
 <script src="js/main.js" type="module"></script>
