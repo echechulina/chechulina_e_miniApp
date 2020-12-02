@@ -1,0 +1,37 @@
+ul {
+    list-style-type: none;
+}
+
+.white {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+.mainHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 40px;
+}
+
+.mainNav ul{
+    list-style-type: none;
+   li{
+       display: inline;
+       font-weight: normal;
+       padding: 5px;
+    a{
+        text-decoration: none;
+        color: black;
+    } 
+    :hover{
+        color: #E38721;
+        } 
+   }
+}
+  

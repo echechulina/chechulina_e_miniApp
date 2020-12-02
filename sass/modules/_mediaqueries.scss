@@ -1,0 +1,43 @@
+@media screen and (min-width: 48em){
+    .container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+     
+    }
+
+    .carInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 50px;
+        margin-top: 20px;
+    }
+
+}
+@media screen and (min-width: 64em){
+body{
+    width: 1080px;
+    align-items: center;
+    margin: auto;
+}
+    .container {
+        display: grid;
+        grid-template-rows: 1fr;
+     
+    }
+
+    .carInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+        margin-top: 20px;
+    }
+
+    .mainHeader {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+   
+    
+
+}
